@@ -8,7 +8,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from alpha_vantage.timeseries import TimeSeries
 
-key = 'DOO16UEIZ37W8XJT'
+key = '###'
 ts = TimeSeries(key, output_format='pandas')
 ttm_data, ttm_meta_data = ts.get_intraday(symbol='TSLA',interval='1min', outputsize='compact')
 df = ttm_data.copy()
